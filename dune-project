@@ -22,7 +22,7 @@
  (synopsis "A short synopsis")
  (description "A longer description")
  (allow_empty)
- (depends ocaml dune melange reason)
+ (depends ocaml dune melange reason melange-webapi)
  (tags
   ("add topics" "to describe" your project)))
 

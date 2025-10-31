@@ -1,4 +1,4 @@
 (melange.emit
  (target output)
- (libraries hello_melange)
+ (libraries hello_melange melange-webapi)
  (module_systems commonjs))
