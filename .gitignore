@@ -1,0 +1,64 @@
+# OCaml and Dune build artifacts
+_build/
+*.install
+*.merlin
+.merlin
+
+# OCaml compiled files
+*.cmo
+*.cmi
+*.cma
+*.cmx
+*.cmxa
+*.cmxs
+*.cmt
+*.cmti
+*.annot
+*.o
+*.a
+*.so
+*.obj
+*.lib
+*.dll
+
+# Native code
+*.native
+*.byte
+
+# JS output from Melange/ReScript/BuckleScript
+*.bs.js
+output/
+_output/
+lib/bs/
+lib/js/
+lib/es6/
+
+# Dependencies
+node_modules/
+opam.locked
+*.opam.locked
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.bak
+
+# OPAM switch local files
+_opam/
+
+# Coverage
+bisect*.coverage
+_coverage/
+
+# Documentation
+*.odoc
+_doc/
+
+# Temporary files
+*.tmp
+*.log
+

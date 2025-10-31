@@ -1,0 +1,4 @@
+(executable
+ (public_name hello-melange)
+ (name main)
+ (libraries hello_melange))
