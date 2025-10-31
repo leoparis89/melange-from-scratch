@@ -1,5 +1,7 @@
 (lang dune 3.20)
 
+(using melange 0.1)
+
 (name hello-melange)
 
 (generate_opam_files true)
@@ -19,10 +21,8 @@
  (name hello-melange)
  (synopsis "A short synopsis")
  (description "A longer description")
- (depends
-  ocaml
-  dune
-  melange)
+ (allow_empty)
+ (depends ocaml dune melange)
  (tags
   ("add topics" "to describe" your project)))
 

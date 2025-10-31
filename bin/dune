@@ -1,4 +1,4 @@
-(executable
- (public_name hello-melange)
- (name main)
- (libraries hello_melange))
+(melange.emit
+ (target output)
+ (libraries hello_melange)
+ (module_systems commonjs))
