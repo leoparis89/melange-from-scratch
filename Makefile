@@ -1,4 +1,4 @@
-.PHONY: help install build clean watch test fmt
+.PHONY: help install build bundle clean watch test fmt
 
 help: ## Show this help message
 	@echo "Available targets:"
@@ -10,11 +10,15 @@ install: ## Install opam dependencies
 build: ## Build the project
 	dune build
 
+bundle: build ## Bundle JavaScript with esbuild to dist/bundle.js
+	npx esbuild _build/default/bin/output/bin/helloReason.js --bundle --outfile=dist/bundle.js
+
 watch: ## Build the project in watch mode
 	dune build --watch
 
 clean: ## Clean build artifacts
 	dune clean
+	rm -rf dist
 
 test: ## Run tests
 	dune runtest

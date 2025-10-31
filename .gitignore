@@ -4,6 +4,9 @@ _build/
 *.merlin
 .merlin
 
+# Bundled JavaScript output
+dist/
+
 # OCaml compiled files
 *.cmo
 *.cmi
