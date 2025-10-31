@@ -12,7 +12,7 @@ build: ## Build the project
 	dune build
 
 bundle: build ## Bundle JavaScript with esbuild to dist/bundle.js
-	npx esbuild _build/default/bin/output/bin/helloReason.js --bundle --minify --outfile=dist/bundle.js
+	npx esbuild _build/default/bin/output/bin/helloReason.js --bundle --outfile=dist/bundle.js
 
 serve: bundle ## Bundle and start dev server at http://localhost:8080
 	npx http-server -p 8080 -o
@@ -30,5 +30,5 @@ test: ## Run tests
 fmt: ## Format OCaml code
 	dune build @fmt --auto-promote
 
-dev: install build ## Install dependencies and build the project
+dev: bundle serve ## Build, bundle, and start dev server
 
