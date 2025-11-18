@@ -1,4 +1,6 @@
 (melange.emit
  (target output)
- (libraries hello_melange melange-webapi)
+ (libraries hello_melange melange-webapi reason-react)
+ (preprocess
+  (pps melange.ppx reason-react-ppx))
  (module_systems commonjs))

@@ -15,6 +15,7 @@ depends: [
   "melange"
   "reason"
   "melange-webapi"
+  "reason-react"
   "odoc" {with-doc}
 ]
 build: [

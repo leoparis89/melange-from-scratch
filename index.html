@@ -3,11 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Melange + Reason Demo</title>
+    <title>Melange + Reason React Demo</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Melange + Reason Demo</h1>
-    <p>Content below is added by JavaScript:</p>
+    <div id="root"></div>
     
     <!-- Load the bundled JavaScript -->
     <script src="dist/bundle.js"></script>
